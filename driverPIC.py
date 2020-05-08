@@ -35,14 +35,15 @@ while t<=tmax:
     k4 = AssembleRHS(solution_coeffs + dt*k3,L,J,N)
     solution_coeffs = solution_coeffs + dt/6*(k1+2*k2+2*k3+k4)
     # unload solution coefficients
-    r = solution_coeffs[0:N-1]
-    v = solution_coeffs[N:2*N - 1]
+    r = solution_coeffs[0:N]
+    v = solution_coeffs[N:2*N]
     # make sure all coordinates are in the range 0 to L
     r = r + L*(r<0) - L*(r>L)
+    t = t + dt
 
     detailed_output(t,dt,solution_coeffs,k1,k2,k3,k4)
     phase_space(t,dt,r,v)
-    t = t + dt
+
     print(t)
 
 
