@@ -40,7 +40,7 @@ while t<=tmax:
     # make sure all coordinates are in the range 0 to L
     r = r + L*(r<0) - L*(r>L)
 
-    detailed_output(t,k1,k2,k3,k4)
+    detailed_output(t,dt,solution_coeffs,k1,k2,k3,k4)
     phase_space(t,dt,r,v)
     t = t + dt
     print(t)
