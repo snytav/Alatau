@@ -1,6 +1,6 @@
 from numpy import random
 import numpy as np
-from initial_distribution import initial_distribution_from_file
+from initial_distribution import initial_distribution_from_file,initial_distribution
 from AssembleRHS import AssembleRHS
 from details import detailed_output
 from graphics import phase_space
@@ -20,7 +20,8 @@ dt = 0.1     # time-step (in inverse plasma frequencies)
 tmax = 80.0  # simulation run from t = 0 to t = tmax
 
 #initialize solution
-r,v = initial_distribution_from_file('r.txt','v.txt')
+r,v = initial_distribution(L,N,vb) #_from_file('r.txt','v.txt')
+phase_space(0.0,dt,r,v)
 
 t = 0.0
 #evolve solution
