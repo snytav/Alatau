@@ -5,10 +5,16 @@ from AssembleRHS import AssembleRHS
 from details import detailed_output
 from graphics import phase_space
 
-#TODO 0. Switch on in-place particle generator.
-#TODO 1. Make it all as a single call with inputs as r,v, grid size,timestep, number of steps.return new r,v-async
+
 #TODO 2. Get Matlab/Python examples of 2D/3D plasma to use as reference
 #TODO 3. Step by step conversion to 3D using the same Numpy operations
+#TODO 3.1. Doing 3D at once, no 2D, both r and v 3D vectors
+#TODO 3.2. Start with Ly,Lz being very small(0.1 Lx),Nx, Ny correspondinlgy,
+# TODO3.3. y,z random vx,vz = 0
+# TODO3.3. Observe the same two-stream instability
+# TODO3.4. Change main direction to Y, than to Z
+
+
 
 
 
