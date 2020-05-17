@@ -10,14 +10,17 @@ from graphics import phase_space
 #TODO 3. Step by step conversion to 3D using the same Numpy operations
 #TODO 3.0.1. Organize the timestep as function, and send it to separate file
 #TODO 3.0.2. Split the timestep
-
-
-
-
+#TODO 3.0.2.1. Density function,returning also weights
+#TODO 3.0.2.2. Field function
+#TODO 3.0.2.3. Push function
+#TODO 3.0.3. Make particle initial distribution accroding to given function
+#TODO 3.0.3.1. start with the present two-stream, and get roughly the same
+#TODO 3.0.4. Evaluate all the quantities from the test of Prof.Sonnenddruecker (distr.func, energies).
 #TODO 3.1. Doing 3D at once, no 2D, both r and v 3D vectors
 #TODO 3.2. Start with Ly,Lz being very small(0.1 Lx),Nx, Ny correspondinlgy,
 # TODO3.3. y,z random vx,vz = 0
 # TODO3.3. Observe the same two-stream instability
+# TODO3.3.1. Evaluate all the quantities from the test of Prof.Sonnenddruecker (distr.func, energies).
 # TODO3.4. Change main direction to Y, than to Z
 
 
