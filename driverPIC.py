@@ -8,6 +8,12 @@ from graphics import phase_space
 
 #TODO 2. Get Matlab/Python examples of 2D/3D plasma to use as reference
 #TODO 3. Step by step conversion to 3D using the same Numpy operations
+#TODO 3.0.1. Organize the timestep as function, and send it to separate file
+#TODO 3.0.2. Split the timestep
+
+
+
+
 #TODO 3.1. Doing 3D at once, no 2D, both r and v 3D vectors
 #TODO 3.2. Start with Ly,Lz being very small(0.1 Lx),Nx, Ny correspondinlgy,
 # TODO3.3. y,z random vx,vz = 0
