@@ -4,6 +4,7 @@ from initial_distribution import initial_distribution_from_file,initial_distribu
 from AssembleRHS import AssembleRHS
 from details import detailed_output
 from graphics import phase_space
+from GetDensity import GetDensity
 
 
 #TODO 2. Get Matlab/Python examples of 2D/3D plasma to use as reference
@@ -39,6 +40,19 @@ tmax = 80.0  # simulation run from t = 0 to t = tmax
 #initialize solution
 r,v = initial_distribution(L,N,vb) #_from_file('r.txt','v.txt')
 phase_space(0.0,dt,r,v)
+
+rv = np.zeros(len(r),2)
+rv[0] = r
+rv[1] = v
+edf = GetDensity(rv,)
+
+
+
+
+
+
+
+
 
 t = 0.0
 #evolve solution
