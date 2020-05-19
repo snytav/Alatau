@@ -8,6 +8,8 @@ from graphics import phase_space
 
 #TODO 2. Get Matlab/Python examples of 2D/3D plasma to use as reference
 #TODO 3. Step by step conversion to 3D using the same Numpy operations
+#TODO 3.1. Change arythmetic operations in GetDensity to Numpy
+#TODO 3.2. Check the 2D density with 2D suface plot of EDF
 
 #TODO 3.0.2. Split the timestep
 #TODO 3.0.2.1. Density function,returning also weights
