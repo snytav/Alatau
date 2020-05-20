@@ -41,7 +41,7 @@ tmax = 80.0  # simulation run from t = 0 to t = tmax
 r,v = initial_distribution(L,N,vb) #_from_file('r.txt','v.txt')
 rv = np.zeros((len(r),2))
 rv[:,0] = r
-rv[:,1] = v
+rv[:,1] = v - np.min(v)
 Lv = np.max(v) - np.min(v)
 edf = GetDensity( rv, [L,Lv], [J,J] )
 
