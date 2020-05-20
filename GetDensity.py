@@ -11,7 +11,7 @@ def GetDensity( r, L, J ):
     ys = np.divide(r,dx) - (js)
     #js -= 1
     #return ys
-    n1 =  ys
+    #n1 =  ys
 
     j = np.mod(js,J) + 1
     j = j + J*(j<0) - J*(j>=J)

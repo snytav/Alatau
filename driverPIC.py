@@ -26,8 +26,8 @@ from GetDensity import GetDensity
 # TODO3.3.1. Evaluate all the quantities from the test of Prof.Sonnenddruecker (distr.func, energies).
 # TODO3.4. Change main direction to Y, than to Z
 
-
-
+# r = np.array([0.25,0.75])
+# dd = GetDensity(r,1.0,2)
 
 
 L = 100      # domain of solution 0 <= x <= L
