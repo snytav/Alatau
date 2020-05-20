@@ -9,7 +9,7 @@ from graphics import phase_space
 #TODO 2. Get Matlab/Python examples of 2D/3D plasma to use as reference
 #TODO 3. Step by step conversion to 3D using the same Numpy operations
 
-#TODO 3.0.2. Split the timestep
+#TODO 3.0.2. Split AssembleRHS
 #TODO 3.0.2.1. Density function,returning also weights
 #TODO 3.0.2.2. Field function
 #TODO 3.0.2.3. Push function
