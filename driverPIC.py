@@ -45,7 +45,7 @@ rv = np.zeros((len(r),2))
 rv[:,0] = r
 rv[:,1] = v - np.min(v)
 Lv = np.max(v) - np.min(v)
-edf = GetDensity( rv, [L,Lv], [J,J] )
+#edf = GetDensity( rv, [L,Lv], [J,J] )
 
 phase_space(0.0,dt,r,v)
 
