@@ -28,7 +28,9 @@ from GetDensity import GetDensity
 
 
 
+from test_density import test_density
 
+#test_density()
 
 L = 100      # domain of solution 0 <= x <= L
 N = 20000    # number of electrons
