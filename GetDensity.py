@@ -23,10 +23,8 @@ def GetDensity( r, L, J ):
     #return js_plus_1
     accmap = js.astype(int)
     a = np.divide((1-ys),dx)
+    a = internal_element_wise_multiply(a)
     n1 = accum(accmap,a) #js.astype(int),np.divide((1-ys),dx))
-    n11 = internal_element_wise_multiply(n1)
-
-
     np.savetxt('n1.txt', n1, delimiter='\n',fmt='%15.5e')
     np.savetxt('js.txt', js+1,delimiter='\n',fmt='%15d')
     np.savetxt('js_plus_1.txt', js_plus_1+1, delimiter='\n',fmt='%15d')
