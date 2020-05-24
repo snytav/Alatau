@@ -29,7 +29,9 @@ def GetDensity( r, L, J ):
     np.savetxt('js.txt', js+1,delimiter='\n',fmt='%15d')
     np.savetxt('js_plus_1.txt', js_plus_1+1, delimiter='\n',fmt='%15d')
     np.savetxt('ys_dx.txt', ys/dx, delimiter='\n',fmt='%15.5e')
-    n2 = accum(js_plus_1.astype(int),np.divide(ys,dx))
+    accmap1 = js_plus_1.astype(int)
+    a1 = np.divide(ys,dx)
+    n2 = accum(accmap1,a1)
     np.savetxt('n2.txt', n2, delimiter='\n',fmt='%15.5e')
     n = n1 + n2
 
