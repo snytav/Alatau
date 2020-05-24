@@ -25,15 +25,15 @@ def GetDensity( r, L, J ):
     a = np.divide((1-ys),dx)
     a = internal_element_wise_multiply(a)
     n1 = accum(accmap,a) #js.astype(int),np.divide((1-ys),dx))
-    np.savetxt('n1.txt', n1, delimiter='\n',fmt='%15.5e')
-    np.savetxt('js.txt', js+1,delimiter='\n',fmt='%15d')
-    np.savetxt('js_plus_1.txt', js_plus_1+1, delimiter='\n',fmt='%15d')
-    np.savetxt('ys_dx.txt', ys/dx, delimiter='\n',fmt='%15.5e')
+    # np.savetxt('n1.txt', n1, delimiter='\n',fmt='%15.5e')
+    # np.savetxt('js.txt', js+1,delimiter='\n',fmt='%15d')
+    # np.savetxt('js_plus_1.txt', js_plus_1+1, delimiter='\n',fmt='%15d')
+    # np.savetxt('ys_dx.txt', ys/dx, delimiter='\n',fmt='%15.5e')
     accmap1 = js_plus_1.astype(int)
     a1 = np.divide(ys,dx)
     a1 = internal_element_wise_multiply(a1)
     n2 = accum(accmap1,a1)
-    np.savetxt('n2.txt', n2, delimiter='\n',fmt='%15.5e')
+    # np.savetxt('n2.txt', n2, delimiter='\n',fmt='%15.5e')
     n = n1 + n2
 
     return n
