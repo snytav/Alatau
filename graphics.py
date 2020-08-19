@@ -10,6 +10,8 @@ def phase_space(t,dt,r,v):
        plt.ylabel('Y')
        tit = 'Electron Phase-space distribution for t = ' + str(t)
        fname = 'phase-space_'+str(math.floor(t / dt))
+       plt_fname = fname+'.png'
+       plt.savefig(plt_fname)
        np.savetxt(fname, np.concatenate((r,v)) , fmt='%15.5e')
        plt.title(tit)
-       plt.show()
+       #plt.show()
