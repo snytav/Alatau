@@ -1,7 +1,10 @@
 import numpy as np
+import math
 
 def detailed_output(t,dt,solution_coeffs,k1,k2,k3,k4):
-    basefn = str(t)+ '.txt'
+    tm = math.floor(t / dt)
+    tm_str = "{:05d}".format(tm)
+    basefn = tm_str + '.txt'
     solcoef_fn = 'solcoef_'+  basefn
     np.savetxt(solcoef_fn, solution_coeffs, delimiter='\n', fmt='%25.15e')
     if t < 10 * dt:
