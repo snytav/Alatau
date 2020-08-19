@@ -28,19 +28,20 @@ from GetDensity import GetDensity
 
 
 
-from test_density import test_density
+#from test_density import test_density
 
-test_density()
+#test_density()
 
 L = 100      # domain of solution 0 <= x <= L
 N = 20000    # number of electrons
 J = 1000     # number of grid points
 vb = 3       # beam velocity
 dt = 0.1     # time-step (in inverse plasma frequencies)
-tmax = 80.0  # simulation run from t = 0 to t = tmax
+tmax = 8.0  # simulation run from t = 0 to t = tmax
 
 #initialize solution
-r,v = initial_distribution(L,N,vb) #_from_file('r.txt','v.txt')
+#r,v = initial_distribution(L,N,vb) #_from_file('r.txt','v.txt')
+r,v = initial_distribution_from_file('r.txt','v.txt')
 rv = np.zeros((len(r),2))
 rv[:,0] = r
 rv[:,1] = v - np.min(v)
